@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply inline-block w-full max-w-xs transform items-center justify-center gap-4
+    truncate rounded-lg px-6 py-5 text-center text-base font-normal leading-6
+    outline-none ring-2 ring-transparent ring-offset-4 ring-offset-transparent transition
+    hover:-translate-y-1 focus:translate-y-0.5 sm:flex;
+  }
+
+  .button-primary {
+    @apply bg-emerald-600 text-white hover:bg-emerald-500
+    focus:bg-emerald-600 focus:outline-none
+    focus:ring-emerald-600 focus:ring-offset-zinc-900;
+  }
+
+  .button-dark {
+    @apply bg-zinc-800 text-white hover:bg-emerald-600
+    focus:bg-zinc-800 focus:outline-none
+    focus:ring-zinc-800 focus:ring-offset-zinc-900;
+  }
+}
